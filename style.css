@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  font-family: Asap, sans-serif;
+}
+
+body {
+  background: #24272E;
+}
+
+header {
+  background: white;
+  padding: 3%;
+}
+
+header > h1 { 
+  color: #24272E;
+  text-align: center;
+}
+
+.score-board {
+  border: 3px solid white;
+  border-radius: 5px;
+  
+  position: relative;
+  width: 25%;
+  margin: 1em auto;
+  padding: 3%;
+  
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.badge {
+  background: #E2584D;
+  font-size: 1.25rem;
+  padding: 2.5%;
+}
+
+#user-label {
+ position: absolute;
+ top: 35%;
+ left: -1.5em;
+}
+
+#comp-label {
+ position: absolute;
+ top: 35%;
+ right: -1.5em;
+}
+
+.result {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.choices {
+  text-align: center;
+  margin: 5em 0;
+}
+
+.choice { 
+  display: inline-block; 
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 3%;
+  margin: 0 3%;
+  transition: all 0.3s ease; 
+}
+
+.choice:hover{ 
+  cursor: pointer;
+  background-color: skyblue;
+}
+
+img {
+  width: 10vw;
+  height: 10vw;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2em 0;
+}
+
+.win {
+  border: 4px solid green;
+  box-shadow: 0 0 10px green;
+}
+.lose {
+  border: 4px solid red;
+  box-shadow: 0 0 10px red;
+}
+.draw {
+  border: 4px solid #F28F3B;
+  box-shadow: 0 0 10px #F28F3B;
+}
